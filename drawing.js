@@ -31,7 +31,6 @@
                 tool.moveTo(iX, iY);
                 tool.lineTo(fX, fY);
                 tool.stroke();
-                console.log("line tool is pending")
             }
         }
     })

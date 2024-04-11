@@ -19,7 +19,7 @@ download.addEventListener("click", (e) => {
     let url = canvasBoard.toDataURL(); 
     let a = document.createElement("a");
     a.href = url;
-    a.download = "board.jpg";
+    a.download = "download.jpg";
     a.click();
 })
 
