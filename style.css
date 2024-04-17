@@ -4,7 +4,17 @@
   /* body{
          overflow: hidden;
   } */
-  
+  ::-webkit-scrollbar{
+    width: 10px;;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(255, 255,255, 0.596);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(164, 208, 245);
+    border-radius: 10px;
+}
   .toolbar {
     border: 1px solid rgb(240, 240, 240);
     background-color: rgb(248, 248, 248);
