@@ -98,7 +98,7 @@
 
 <!-- div -> content -->
 <div class="toolbar">
-<body>
+<body oncontextmenu="return false">
     <div class="tool" id="pencil">
         <i class="fa fa-pencil xl-size" aria-hidden="true"></i>
         <div class="size-box">
@@ -186,7 +186,18 @@
     <script src="tools.js"></script>
     <!-- sticky notes -->
     <script src="sticky.js"></script>
-
+    <script>
+         // Listen for keydown event ... this is going to prevent the F12 key button 
+         document.addEventListener('keydown', function(event) {
+                // Check if F12 key was pressed
+                if (event.keyCode === 123) {
+                    // Prevent default behavior (opening developer tools)
+                    event.preventDefault();
+                    // Optionally, you can also display a message to the user
+                    console.log('Inspect Element is disabled on this website.');
+                }
+            });
+    </script>
 <!-- <script>
         const canvas = document.getElementsByTagName('canvas')[0]; // Select canvas using getElementsByTagName
         const context = canvas.getContext('2d');
